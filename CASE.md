@@ -1,6 +1,6 @@
 # Clamshell case design
 
-Instructions to come.
+This is the v2 case design that encloses battery, uses local storage, connects to the smartphone via Bluetooth Low Energy, and includes visual indicators.
 
 ## Initial case design
 

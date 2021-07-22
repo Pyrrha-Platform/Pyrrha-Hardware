@@ -11,7 +11,7 @@ It is now ready for a redesign to ensure it can be reliably manufactured with be
 ## Recreating the prototype
 
 - For breadboard set up, see [PROTOTYPING.md](PROTOTYPING.md)
-- For PCB board, instructions will be in [PCB.md](PCB.md)
+- For soldered images of a non-breadboard prototype, see [PROM3TEO.md](PROM3TEO.md)
 - For the case design, see [CASE.md](CASE.md)
 
 ## Design review next steps
