@@ -20,7 +20,7 @@ There are several upgrades that are planned for the next version of the hardware
 
 The goal that we hope to achieve with the community is a new iteration that takes into consideration cost, compliance, scalability, appropriateness of design, support for automation, and producibility.
 
-Each of these electrical or hardware recommendations are documented as [issue](https://github.com/Pyrrha-Platform/Pyrrha-Hardware/issues) in this repository, or tracked in the [Firmware repo](https://github.com/Pyrrha-Platform/Pyrrha-Firmware).
+Each of these electrical or hardware recommendations are documented as [issues](https://github.com/Pyrrha-Platform/Pyrrha-Hardware/issues) in this repository, or tracked in the [Firmware repo](https://github.com/Pyrrha-Platform/Pyrrha-Firmware).
 
 - [Processor](https://github.com/Pyrrha-Platform/Pyrrha-Hardware/issues/3)
 - [Temperature and humidity sensor](https://github.com/Pyrrha-Platform/Pyrrha-Hardware/issues/4)
