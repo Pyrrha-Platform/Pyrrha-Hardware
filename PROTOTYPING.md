@@ -17,9 +17,9 @@ This section will guide you through installing the prerequisite software on your
 
 1. Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) for your operating system.
 
-2. Follow the [ClusterDuck-Protocol](https://github.com/Code-and-Response/ClusterDuck-Protocol/wiki/software) instructions (#1-3) to install ESP32 core libraries:
+1. Follow the [ClusterDuck-Protocol](https://github.com/Code-and-Response/ClusterDuck-Protocol/wiki/software) instructions (#1-3) to install ESP32 core libraries:
 
-3. Connect the ESP32 Feather to computer via USB cable. Verify that the USB to UART bridge is installed correctly:
+1. Connect the ESP32 Feather to computer via USB cable. Verify that the USB to UART bridge is installed correctly:
 
    - Windows: check in Device Manager for Windows
 
@@ -35,7 +35,7 @@ This section will guide you in connecting your ESP32 to a local WiFi network.
 
 1. Connect your ESP32 Feather to your computer via USB cable.
 
-2. Follow [these instructions and perform the WifiScan](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to make sure you have all the libraries and your connection is good.
+1. Follow [these instructions and perform the WifiScan](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to make sure you have all the libraries and your connection is good.
 
 ## Part 3: Check Polarity of LiPo Battery
 
@@ -45,7 +45,7 @@ This section will guide you in verifying the correct polarity of the LiPo batter
 
    ![Check polarity](img/3-polarity.png)
 
-2. Check the polarity of the Lipo Battery using a multimeter. If it is negative, then you have to invert the wires in the JST connector.
+1. Check the polarity of the Lipo Battery using a multimeter. If it is negative, then you have to invert the wires in the JST connector.
 
    ![Reverse polarity](img/3-reverse-polarity.png)
 
@@ -69,7 +69,7 @@ How-to Videos:
    - Adafruit have introduced a unified model to many of their sensor libraries, including the DHT library, and to use them you need to install the **Adafruit Unified Sensor** library, so search for it, it will appear at the bottom of the list, then install it.
    - When both of the libraries have been installed, click **close** to close the library manager.
 
-2. Wire the DHT22 sensor onto the breadboard as follows:
+1. Wire the DHT22 sensor onto the breadboard as follows:
 
 - Pinout connecting Temperature/Humidity --> Feather
   - (-) --> GND
@@ -79,13 +79,13 @@ How-to Videos:
 
   ![Reverse polarity](img/5-breadboard.jpeg)
 
-3. Download [sketch_DHT22_Sensor](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_DHT22_Sensor) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [sketch_DHT22_Sensor](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_DHT22_Sensor) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
-4. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
+1. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
 
    ![Reverse polarity](img/5-console.png)
 
-5. Bask in the warm sunlight of temperature and humidity readings coming from your DHT22.
+1. Bask in the warm sunlight of temperature and humidity readings coming from your DHT22.
 
    - You can change the humidity by breathing on the sensor
 
@@ -99,7 +99,7 @@ How-to Videos:
 
    - When both of the libraries have been installed, click **Close** to close the library manager.
 
-2. Wire the RGB LED onto the breadboard as follows:
+1. Wire the RGB LED onto the breadboard as follows:
 
    - Pinout connecting LED --> Feather
    - Data in --> A0 / GIPO 26 (Could be any GPIO Output)
@@ -111,9 +111,9 @@ How-to Videos:
 
    ![Reverse polarity](img/6-leds-active.jpeg)
 
-3. Download [sketch_RGBWstrandtest](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_RGBWstrandtest) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [sketch_RGBWstrandtest](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_RGBWstrandtest) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
-4. The LED should cycle through Green, Red, Blue, Yellow colors, followed by Rainbow colors fade to white.
+1. The LED should cycle through Green, Red, Blue, Yellow colors, followed by Rainbow colors fade to white.
 
 Troubleshooting:
 If the LED remains a solid color, in the Arduino IDE menu, open **Tools** -> **Serial Monitor**.  If you see this error: "E (38264) gpio: gpio_set_level(176): GPIO output gpio_num error", make sure the LED_PIN in the Arduino code is set to the GPIO number corresponding to the "Data In" pin. In the above example, use 26 instead of A0.
@@ -134,7 +134,7 @@ There are built-in SD card tests in Arduino ID as well. **File** > **Examples** 
 
 1. Download [SD_Test](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/SD_Test) sketch code.. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
-2. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
+1. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
 
    - On my Mac (and I think on Vince's), I get a **Card Mount Failed** error. The error comes from one of the first lines of code - `SD.begin()`. Googling it, it seems that API takes an optional CS pin parameter that allows you to specify which ESP32 pin is wired to the “CS” pin on the SD card. From the wiring above, that’s 33, but doing `SD.begin(33)` makes no difference, so I’m not sure if I’m doing that right? --JS
 
@@ -148,23 +148,23 @@ Download George's testing sketch [Bluetooth Test code](https://github.com/Code-a
 
 1. Open Bluetooth Preferences on your computer and look for "ESP32"
 
-2. Connect to ESP32 via bluetooth
+1. Connect to ESP32 via bluetooth
 
-3. In Arduino IDE menu, change the Port by opening **Tools** -> **Port** -> "/dev/cu.ESP32-ESP32SPP". Open **Tools** -> **Serial Monitor** to see "Hello World" message.
+1. In Arduino IDE menu, change the Port by opening **Tools** -> **Port** -> "/dev/cu.ESP32-ESP32SPP". Open **Tools** -> **Serial Monitor** to see "Hello World" message.
 
    - Note: Laura couldn't get this port to show up? Not sure if missing a library or something, but the BLE test worked fine with my phone
 
    - The BLE also works fine with the Mac.  The port above is for the Mac.  I believe for PC, it's a COM port? Maybe we do need to separate instructions based on Mac vs. Windows. --VSS
 
-4. Plug in LiPo Battery to set-up and try disconnecting USB from computer. Check that the "Hello World" message continues to show.
+1. Plug in LiPo Battery to set-up and try disconnecting USB from computer. Check that the "Hello World" message continues to show.
 
 BLE Test
 
 1. Upload the [BLE-OK](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/BLE-OK) sketch to your ESP32
 
-2. You can scan your ESP32 BLE server with your smartphone and see its services and characteristics. For that, we’ll be using a free app called nRF Connect for Mobile from Nordic, it works on Android ([Google Play Store](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp)) and iOS ([App Store](https://apps.apple.com/us/app/nrf-connect/id1054362403)). Go to Google Play Store or App Store and search for “nRF Connect for Mobile”. Install the app and open it.
+1. You can scan your ESP32 BLE server with your smartphone and see its services and characteristics. For that, we’ll be using a free app called nRF Connect for Mobile from Nordic, it works on Android ([Google Play Store](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp)) and iOS ([App Store](https://apps.apple.com/us/app/nrf-connect/id1054362403)). Go to Google Play Store or App Store and search for “nRF Connect for Mobile”. Install the app and open it.
 
-3. In your phone, find the Prometeo device and connect to it.
+1. In your phone, find the Prometeo device and connect to it.
 
 ## Part 9: CO/NO Sensor Sample App
 
@@ -183,7 +183,7 @@ CO/NO Sensor Test
 
    - I had to match the baud rate to get the script to work - i.e. change the line `Serial.begin(9600);` to `Serial.begin(115200);` After that, it worked like a charm --JS
 
-2. In the Arduino IDE menu, open Tools -> Serial Monitor
+1. In the Arduino IDE menu, open Tools -> Serial Monitor
 
    - Bask in the warm sunlight of **Vnox** and  **Vred** values from your MICS-4514 that aren't changing, because you're not on fire! 😃 🔥
    - Marco - I burned something... now I got some readings...
