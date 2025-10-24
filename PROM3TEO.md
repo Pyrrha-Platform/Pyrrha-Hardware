@@ -1,6 +1,6 @@
 # PCB manufacturing instructions
 
-Screenshots of the soldered third-generation Prom3teo device assembled by [Project OWL](https://www.project-owl.com/). 
+Screenshots of the soldered third-generation Prom3teo device assembled by [Project OWL](https://www.project-owl.com/).
 
 ## Initial soldered prototype
 
