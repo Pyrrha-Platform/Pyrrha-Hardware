@@ -17,7 +17,7 @@ This section will guide you through installing the prerequisite software on your
 
 1. Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) for your operating system.
 
-1. Follow the [ClusterDuck-Protocol](https://github.com/Code-and-Response/ClusterDuck-Protocol/wiki/software) instructions (#1-3) to install ESP32 core libraries:
+1. Follow the [ClusterDuck-Protocol](https://github.com/ClusterDuck-Protocol/ClusterDuck-Protocol/wiki/software) instructions (#1-3) to install ESP32 core libraries:
 
 1. Connect the ESP32 Feather to computer via USB cable. Verify that the USB to UART bridge is installed correctly:
 
@@ -79,7 +79,7 @@ How-to Videos:
 
   ![Reverse polarity](img/5-breadboard.jpeg)
 
-1. Download [sketch_DHT22_Sensor](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_DHT22_Sensor) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [sketch_DHT22_Sensor](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/sketch_DHT22_Sensor) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
 1. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
 
@@ -111,7 +111,7 @@ How-to Videos:
 
    ![Reverse polarity](img/6-leds-active.jpeg)
 
-1. Download [sketch_RGBWstrandtest](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/sketch_RGBWstrandtest) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [sketch_RGBWstrandtest](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/sketch_RGBWstrandtest) sketch code. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
 1. The LED should cycle through Green, Red, Blue, Yellow colors, followed by Rainbow colors fade to white.
 
@@ -132,7 +132,7 @@ George's Preliminary Pinout:
 
 There are built-in SD card tests in Arduino ID as well. **File** > **Examples** > **SD** > **ReadWrite** is a good basic test.
 
-1. Download [SD_Test](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/SD_Test) sketch code.. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [SD_Test](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/SD_Test) sketch code.. Open the code in Arduino IDE and click the **Upload** button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
 1. In the Arduino IDE menu, open **Tools** -> **Serial Monitor**
 
@@ -144,7 +144,7 @@ There are built-in SD card tests in Arduino ID as well. **File** > **Examples** 
 
 ## Part 8: Bluetooth Test
 
-Download George's testing sketch [Bluetooth Test code](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/BLE-OK) Open it in the Arduino IDE and click the 'Upload' button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+Download George's testing sketch [Bluetooth Test code](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/BLE-OK) Open it in the Arduino IDE and click the 'Upload' button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
 1. Open Bluetooth Preferences on your computer and look for "ESP32"
 
@@ -160,7 +160,7 @@ Download George's testing sketch [Bluetooth Test code](https://github.com/Code-a
 
 BLE Test
 
-1. Upload the [BLE-OK](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/BLE-OK) sketch to your ESP32
+1. Upload the [BLE-OK](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/BLE-OK) sketch to your ESP32
 
 1. You can scan your ESP32 BLE server with your smartphone and see its services and characteristics. For that, we’ll be using a free app called nRF Connect for Mobile from Nordic, it works on Android ([Google Play Store](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp)) and iOS ([App Store](https://apps.apple.com/us/app/nrf-connect/id1054362403)). Go to Google Play Store or App Store and search for “nRF Connect for Mobile”. Install the app and open it.
 
@@ -179,7 +179,7 @@ George's Preliminary Pinout:
 
 CO/NO Sensor Test
 
-1. Download [MICS-4514-Test](https://github.com/Code-and-Response/Prometeo-Firmware/tree/master/september-prototypes/MICS-4514-Test) sketch code. Open the code in Arduino IDE and click the 'Upload' button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
+1. Download [MICS-4514-Test](https://github.com/Pyrrha-Platform/Pyrrha-Firmware/tree/master/september-prototypes/MICS-4514-Test) sketch code. Open the code in Arduino IDE and click the 'Upload' button. Wait for it to compile, upload and print the "Hard resetting via RTS pin..." message.
 
    - I had to match the baud rate to get the script to work - i.e. change the line `Serial.begin(9600);` to `Serial.begin(115200);` After that, it worked like a charm --JS
 
